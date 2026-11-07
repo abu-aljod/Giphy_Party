@@ -1,0 +1,118 @@
+body {
+    background-color: blanchedalmond;
+    margin: auto;
+    padding: 0.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkcyan;
+}
+
+h1 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 4vw;
+    font-size: 4vw;
+    font-weight: bold ;
+}
+
+#gifs-form {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;   
+}
+
+label {
+    color: brown;
+    font-size: 2.08vw;
+    font-weight: bold;
+    font-style: italic;
+    margin: 6px;
+}
+
+input {
+    margin: 3px;
+    padding: 12px 20px; 
+    font-size: 18px; 
+    border-radius: 6px;
+    background-color: transparent;
+    font-family: inherit;
+    color: brown;
+}
+
+input:focus {
+    outline: none;
+    border: 2px dashed brown;
+}
+
+button {
+    margin: 3px;
+  background-color: darkcyan;
+  color: blanchedalmond;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  /* when the user hovers, change the cursor to show as pointer */
+  cursor: pointer;
+  box-shadow: 0 6px 0 cadetblue;
+  /* how the changes show when an effect happens
+  for all changes, duirng 0.1 second, make the changes: slowly, speed up, then slow down */
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #1d4ed8;
+  transform: translateY(4px);
+}
+
+.gifs {
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 6px 15px rgba(75, 44, 32, 0.4);
+    border-radius: 8px;
+}
+
+.gifs:hover {
+    transform: translateY(-5px) scale(1.02); /* Moves up slightly and zooms in 2% */
+    box-shadow: 0px 12px 25px rgba(75, 44, 32, 0.6); /* Makes shadow darker and larger */
+}
+
+#imgs-div {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 660px) {
+    .buttons-cont {
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        gap: 8px;
+    }
+
+    .gifs {
+        width: auto;
+        height: 200px;
+    }
+
+    label {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+}
