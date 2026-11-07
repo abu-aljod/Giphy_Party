@@ -12,7 +12,7 @@ let counter = 0;
 const giphyApiKey = GIPHY_API_KEY;
 
 async function giphyRequest(gifType) {
-    const response = await axios.get(`http://api.giphy.com/v1/gifs/search?api_key=${giphyApiKey}&q=${gifType}`);
+    const response = await axios.get(`https://api.giphy.com/v1/gifs/search?api_key=${giphyApiKey}&q=${gifType}`);
     
     // generate a random number to pick a one gif from the result
     let resLeng = response.data.data.length;
